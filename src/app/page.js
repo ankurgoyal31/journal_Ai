@@ -5,6 +5,10 @@ const boxRef = useRef(null)
 const [input, set_Input] = useState("");
 const [categories,set_categories] = useState([])
   const get_catagory = async()=>{
+    if(input===""){
+      alert("please fill the require field")
+      return;
+    }
   let find = localStorage.getItem("User_Id")
   console.log(find)
  let res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/user_data`,{
