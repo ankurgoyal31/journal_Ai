@@ -42,7 +42,7 @@ await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/delete`,{method:'POST',heade
           <div ref={boxRef} className='msg'> 
                <div className='ih'> 
                    </div>
-        <div className='sen'> <div className='inp'><input onChange={(e)=>set_Input(e.target.value)}value={input}className='tex'type="text"placeholder='Ask Any quetions 'onKeyDown={(e) => {if (e.key === "Enter" && !e.shiftKey) { get_catagory() }}}/>
+        <div className='sen'> <div className='inp'><input onChange={(e)=>set_Input(e.target.value)}value={input}className='tex'type="text"placeholder='Write your journal here...'onKeyDown={(e) => {if (e.key === "Enter" && !e.shiftKey) { get_catagory() }}}/>
             <span onClick={get_catagory} className='btn'>send</span>
            </div>
           {categories.length>0 && categories.map((item,i)=>{
