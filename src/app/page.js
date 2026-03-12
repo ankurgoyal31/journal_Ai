@@ -7,9 +7,9 @@ const [categories,set_categories] = useState([])
 const [loader,set_loader] = useState(true)
 const[err,set_err] = useState(false);
   const get_catagory = async()=>{
-    if(input===""){
-      alert("please fill the require field....);
-            return;
+    if(input === ""){
+      alert("please fill the require field....");
+      return;
     }
   let find = localStorage.getItem("User_Id")
   console.log(find)
